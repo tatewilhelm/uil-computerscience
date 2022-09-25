@@ -1,3 +1,6 @@
+// Tate Wilhelm, 2022
+// https://tatewilhelm.me/
+
 import java.io.*;
 import java.util.*;
 
