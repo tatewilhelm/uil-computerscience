@@ -12,28 +12,26 @@ public class ThereYet
 	{
 		Scanner scan = new Scanner(new File("thereyet.dat"));
 
-		// Take in amount
-		int amount = scan.nextInt();
+		int x = scan.nextInt();
 		scan.nextLine();
-		for (int i = 0; i < amount; i++)
-		{
-			// Take in hours / minutes
-			String s = scan.nextLine();
-			String[] t = s.split(" ");
-			int h = Integer.parseInt(t[0]);
-			int m = Integer.parseInt(t[2]);
 
-			// Add 30 minutes
+		for (int i = 0; i < x; i++)
+		{
+			String[] s = scan.nextLine().split(" ");
+
+			int h = Integer.parseInt(s[0]);
+			int m = Integer.parseInt(s[2]);
+
 			m += 30;
 
 			if (m >= 60)
 			{
-				m %= 60;
+				m -= 60;
 				h++;
 			}
 
 			System.out.println(h + " hours " + m + " minutes");
-
+			
 		}
 	}
 }

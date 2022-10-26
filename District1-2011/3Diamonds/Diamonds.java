@@ -17,8 +17,8 @@ public class Diamonds {
         for (int i = 0; i < x; i++)
         {
             String s = scan.nextLine();
-            char c = s.split(" ")[0].charAt(0);
-            int l = Integer.parseInt(s.split(" ")[1]);
+            char c = s.split("\\s+")[0].charAt(0);
+            int l = Integer.parseInt(s.split("\\s+")[1]);
             int a = l / 2;
             int b = l / 2;
             

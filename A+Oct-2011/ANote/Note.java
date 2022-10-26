@@ -3,9 +3,6 @@
 
 import java.io.*;
 import java.util.*;
-
-import javax.swing.text.Position;
-
 import java.lang.*;
 
 public class Note {
